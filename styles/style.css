@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: #272932;
+}
+
+.navbar {
+    background-color: #D9D9D9;
+    height: 40em;
+    width: 12em;
+    margin: 2em .5em 2em .5em;
+    border-radius: 15px;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.navbar.close {
+    width: 4em;
+}
+
+.navbar header {
+    position: relative;
+}
+
+.navbar-list {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+li .navbar-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    height: 50%;
+    background: red;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li .icon {
+    min-width: 60px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-text {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: .5em;
+    transition: 0.4s;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.navbar.close .nav-text {
+    opacity: 0;
+}
+
+.navbar li a {
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+i {
+    display: flex;
+    color: #519879;
+    position: center;
+    font-size: 1.5em;
+}
+
+.navbar header .toggle {
+    position: absolute;
+    top: 30%;
+    right: -13px;
+    transform: translateY(-50%);
+    height: 1em;
+    width: 1em;
+    background: black;
+    border-radius: 20%;
+    cursor: pointer;
+}
