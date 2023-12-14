@@ -20,6 +20,23 @@ body {
     width: 4em;
 }
 
+.navbar header .toggle {
+    position: absolute;
+    top: 30%;
+    right: -13px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 1em;
+    width: 1em;
+    background: black;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar.close header .toggle {
+    transform: translateY(-50%);
+}
+
 .navbar header {
     position: relative;
 }
@@ -40,7 +57,6 @@ li .navbar-list__item {
 
 .navbar li {
     height: 50%;
-    background: red;
     margin-top: 10px;
     list-style: none;
     display: flex;
@@ -49,7 +65,7 @@ li .navbar-list__item {
 
 .navbar li .icon {
     min-width: 60px;
-    font-size: 1.5em;
+    font-size: 1.7em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,16 +98,4 @@ i {
     color: #519879;
     position: center;
     font-size: 1.5em;
-}
-
-.navbar header .toggle {
-    position: absolute;
-    top: 30%;
-    right: -13px;
-    transform: translateY(-50%);
-    height: 1em;
-    width: 1em;
-    background: black;
-    border-radius: 20%;
-    cursor: pointer;
 }
